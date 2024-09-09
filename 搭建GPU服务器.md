@@ -47,9 +47,9 @@ sudo apt-mark hold linux-modules-extra-5.11.0-41-generic
 ```mkdir DockerfileContext```, ```cd DockerfileContext```, ```touch Dockerfile```, ```vim Dockerfile```, 写入下面的内容:
 ```
 FROM nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04
-MAINTAINER BerenChow<weixin:*******>
+MAINTAINER <Email:1692327311@qq.com>
 ENV TZ=Asia/Shanghai
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/lqq.comocaltime \
     && echo $TZ > /etc/timezone \
     && echo "root:root" | chpasswd \
     && apt-get update && apt-get install -y \
